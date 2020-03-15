@@ -16,48 +16,26 @@
 </head>
 
 <body>
-	<div class="container2">
+	<div class="menu">
+		<img src="../images/prev.svg" class="container__prev-arrow"alt="prev arrow">
 		<img src="../images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
 		<img src="../images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
 		<img src="../images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
 		<img src="../images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
 		<div class="container__content">
 			<img src="../images/avatarorange.svg" class="container__img" alt="avatar">
-			<header class="container2__header">
+			<header class="menu__header">
 				<p>Choose what do you want to do:</p>
 			</header>
-			<div class="container2__btn-content">
-				<button class="container2__btn-content__btn" id="danish-btn">FAQ</button>
-				<button class="container2__btn-content__btn" id="british-btn">Calendar</button>
-				<button class="container2__btn-content__btn" id="british-btn">Test</button>
+			<div class="menu__btn-content">
+				<button type="submit" class="menu__btn-content__btn btn1" formaction="new/newuser.html">FAQ</button>
+				<button class="menu__btn-content__btn bt2">Calendar</button>
+				<button class="menu__btn-content__btn btn3" >Test</button>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src=""></script>
-	<script>
-		$(document).ready(function(){
-			$("#btn-start").click(function(){
-				console.log("add style");
-				$(".container").css({
-					"display":"none"
-				});
-				$(".container2").css({
-					"display":"block"
-				});
-			});
-
-			$("#british-btn").click(function(){
-				console.log("add style");
-				$(".container2").css({
-					"display":"none"
-				});
-				$(".container3").css({
-					"display":"block"
-				});
-			});
-		});
-	</script>
 </body>
 
 </html>
