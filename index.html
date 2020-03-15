@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/mystyle.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 	<title>Study Counseling | Business Academy Aarhus</title>
 </head>
 
@@ -20,15 +22,72 @@
 		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
 		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
 		<div class="container__content">
-				<img src="images/avatarorange.svg" class="container__img" alt="avatar">
+			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
 			<header class="container__header">
 				<p>Welcome to the Study Counselling.<br>
 					We are here to help you.</p>
 			</header>
-			<button class="container__btn">ENTER</button>
+			<button class="container__btn" id="btn-start">ENTER</button>
 		</div>
 	</div>
+	<div class="container2">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
+			<header class="container2__header">
+				<p>Choose your language</p>
+			</header>
+			<div class="container2__btn-content">
+				<button class="container2__btn-content__btn" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
+				<button class="container2__btn-content__btn" id="british-btn"><img src="images/uk.svg" alt="british flag"></button>
+			</div>
+		</div>
+	</div>
+	<div class="container3">
+		<img src="images/prev.svg" class="container__prev-arrow"alt="prev arrow">
+		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
+		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
+		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
+		<div class="container__content">
+			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
+			<header class="container3__header">
+				<p>Choose your student status</p>
+			</header>
+			<div class="container3__btn-content">
+				<button class="container3__btn-content__btn">NEW</button>
+				<button class="container3__btn-content__btn">CURRENT</button>
+			</div>
+		</div>
+	</div>
+
 	<script type="text/javascript" src=""></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn-start").click(function(){
+				console.log("add style");
+				$(".container").css({
+					"display":"none"
+				});
+				$(".container2").css({
+					"display":"block"
+				});
+			});
+
+			$("#british-btn").click(function(){
+				console.log("add style");
+				$(".container2").css({
+					"display":"none"
+				});
+				$(".container3").css({
+					"display":"block"
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
