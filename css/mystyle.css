@@ -12,12 +12,15 @@ body {
 }
 
 /*******************************INDEX*******************************/
-.container {
+.container, .container2, .container3 {
   width: 100%;
   height: 100%;
-  background-color: #94D5DE;
   overflow: hidden;
   position: relative;
+}
+
+.container {
+  background-color: #94D5DE;
 }
 
 .container__item {
@@ -76,11 +79,7 @@ body {
 
 /*******************************LANGUAGES*******************************/
 .container2 {
-  width: 100%;
-  height: 100%;
   background-color: #fff;
-  overflow: hidden;
-  position: relative;
 }
 
 .container2__btn-content {
@@ -115,11 +114,7 @@ body {
 
 /***STUDENT STATUS***/
 .container3 {
-  width: 100%;
-  height: 100%;
   background-color: #fff;
-  overflow: hidden;
-  position: relative;
 }
 
 .container3 .container__prev-arrow {
