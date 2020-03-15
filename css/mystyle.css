@@ -112,7 +112,7 @@ body {
   font-weight: 600;
 }
 
-/***STUDENT STATUS***/
+/*******************************STUDENT STATUS*******************************/
 .container3 {
   background-color: #fff;
 }
@@ -222,7 +222,7 @@ body {
 }
 
 .calendar__container__content__header {
-  width: 90%;
+  width: 70%;
   font-size: 20px;
   border-radius: 20px;
   background-color: #FAFAFA;
@@ -231,7 +231,7 @@ body {
   text-align: center;
   color: #6581CD;
   font-weight: 600;
-  margin: 0 0 5% 40%;
+  margin: 0 0 5% 30%;
 }
 
 .calendar__container__content__table {
@@ -243,7 +243,7 @@ body {
 }
 
 .calendar__container__content__table__grid {
-  width: 100%;
+  width: 95%;
   height: 100%;
   max-height: 100%;
   display: -ms-inline-grid;
@@ -254,15 +254,19 @@ body {
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24 {
   background-color: #93BF71;
-  height: 30%;
+  height: 20%;
   border-radius: 20px;
   margin: 40% 3%;
+  padding: 5%;
+  font-size: 25px;
 }
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15 {
   background-color: #E37B7B;
-  height: 30%;
+  height: 20%;
   border-radius: 20px;
   margin: 40% 3%;
+  padding: 5%;
+  font-size: 25px;
 }
 /*# sourceMappingURL=mystyle.css.map */

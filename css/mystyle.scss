@@ -41,11 +41,13 @@ body{
         max-width: 1000px;
         height: 100%;
         margin: 0 auto;
+
         .container__img{
             width: 180px;
             height: 180px;
             margin-bottom: 30px;
         }
+
         .container__header{
             width: 70%;
             font-size: 35px;
@@ -57,6 +59,7 @@ body{
             color: $blue;
             font-weight: 600;
         }
+
         .container__btn{
             width: 25%;
             margin-top: 40px;
@@ -95,7 +98,7 @@ body{
     }
 
     .container2__header{
-        width: 70%;
+            width: 70%;
             font-size: 35px;
             border-radius: 20px;
             background-color: $grey;
@@ -107,7 +110,7 @@ body{
     }
 }
 
-/***STUDENT STATUS***/
+/*******************************STUDENT STATUS*******************************/
 .container3{
     @extend %mainContainer;
     background-color: $white;
@@ -125,6 +128,7 @@ body{
         display: flex;
         justify-content: center;
         width: 100%;
+
         &__btn{
             width: 30%;
             padding: 3%;
@@ -140,7 +144,7 @@ body{
     }
 
     .container3__header{
-        width: 70%;
+            width: 70%;
             font-size: 35px;
             border-radius: 20px;
             background-color: $grey;
@@ -183,6 +187,7 @@ body{
     &__item{
         position: absolute;
     }
+
     &__content{
         display: flex;
         justify-content: center;
@@ -191,14 +196,16 @@ body{
         max-width: 1000px;
         height: 100%;
         margin: 0 auto;
+
         &__img{
             width: 80px;
             height: 80px;
             margin: -16% -30% ;
             position: absolute;
         }
+
         &__header{
-            width: 90%;
+            width: 70%;
             font-size: 20px;
             border-radius: 20px;
             background-color: $grey;
@@ -207,103 +214,112 @@ body{
             text-align: center;
             color: $blue;
             font-weight: 600;
-            margin: 0 0 5% 40%;
+            margin: 0 0 5% 30%;
         }
+
         &__table{
             width: 100%;
             height: 60%;
             background-color: $grey;
             border-radius: 20px;
             text-align: center;
+
             &__grid{
-                width: 100%;
+                width: 95%;
                 height: 100%;
                 max-height: 100%;
                 display: inline-grid;
                 grid-template-columns: auto auto auto auto auto auto auto auto;
+
                 %green_elements{
                     background-color: $green;
-                    height: 30%;
+                    height: 20%;
                     border-radius: 20px;
-                    margin:40% 3%;
+                    margin: 40% 3%;
+                    padding: 5%;
+                    font-size: 25px;
                 }
+
                 %red_elements{
                     background-color: $red;
-                    height: 30%;
+                    height: 20%;
                     border-radius: 20px;
                     margin:40% 3%;
+                    padding: 5%;
+                    font-size: 25px;
                 }
+
                 &__element1{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element2{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element3{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element4{
-                    @extend %red_elements
+                    @extend %red_elements;
                 }
                 &__element5{
-                    @extend %red_elements
+                    @extend %red_elements;
                 }
                 &__element6{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element7{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element8{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element9{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element10{
-                    @extend %red_elements
+                    @extend %red_elements;
                 }
                 &__element11{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element12{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element13{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element14{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element15{
-                    @extend %red_elements
+                    @extend %red_elements;
                 }
                 &__element16{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element17{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element18{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element19{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element20{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element21{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element22{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element23{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
                 &__element24{
-                    @extend %green_elements
+                    @extend %green_elements;
                 }
 
             }
