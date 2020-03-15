@@ -257,115 +257,17 @@ body {
       grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
-.calendar__container__content__table__grid__element1 {
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24 {
   background-color: #93BF71;
   height: 30%;
   border-radius: 20px;
   margin: 40% 3%;
 }
 
-.calendar__container__content__table__grid__element2 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element3 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element4 {
+.calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15 {
   background-color: #E37B7B;
   height: 30%;
   border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element5 {
-  background-color: #E37B7B;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element6 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element7 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element8 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element9 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element10 {
-  background-color: #E37B7B;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element11 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element12 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element13 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element14 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element15 {
-  background-color: #E37B7B;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
-}
-
-.calendar__container__content__table__grid__element16 {
-  background-color: #93BF71;
-  height: 30%;
-  border-radius: 20px;
-  margin: 3%;
+  margin: 40% 3%;
 }
 /*# sourceMappingURL=mystyle.css.map */
