@@ -201,10 +201,11 @@ body{
         justify-content: center;
         width: 100%;
         flex-direction: row;
+        flex-wrap: wrap;
         
         &__btn{
-            padding: 3%;
-            margin:10px 0 0 10px;
+            padding: 3% 0;
+            margin:40px 0 0 0;
             font-weight: 600;
             color: $blue;
             background-color: $grey;
@@ -212,24 +213,35 @@ body{
             border-radius: 20px;
             font-size: 30px;
             cursor: pointer;
+            flex:1;
         }
 
-        .btn1, .btn2{
-            flex: 1 1 0;
+        .btn2, .btn3{
+            flex: 0 1 100%;
+            order:2;
+        }
+
+        .btn1{
+            flex: 0 1 50%;
+            order: 1;
+        }
+
+        .btn1{
+            margin-left: 15px;
         }
 
         .btn3{
-            flex: 100%;
+            margin: 15px 0 0 0;
         }
     }
 
 
     .menu__header{
-        width: 70%;
+        width: 100%;
         font-size: 35px;
         border-radius: 20px;
         background-color: $grey;
-        padding: 3% 30px;
+        padding: 3% 0;
         margin: 20px 0 10px 0;
         text-align: center;
         color: $blue;

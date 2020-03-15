@@ -214,11 +214,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu__btn-content__btn {
-  padding: 3%;
-  margin: 10px 0 0 10px;
+  padding: 3% 0;
+  margin: 40px 0 0 0;
   font-weight: 600;
   color: #6581CD;
   background-color: #FAFAFA;
@@ -226,26 +228,43 @@ body {
   border-radius: 20px;
   font-size: 30px;
   cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.menu__btn-content .btn1, .menu__btn-content .btn2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+.menu__btn-content .btn2, .menu__btn-content .btn3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.menu__btn-content .btn1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.menu__btn-content .btn1 {
+  margin-left: 15px;
 }
 
 .menu__btn-content .btn3 {
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
+  margin: 15px 0 0 0;
 }
 
 .menu .menu__header {
-  width: 70%;
+  width: 100%;
   font-size: 35px;
   border-radius: 20px;
   background-color: #FAFAFA;
-  padding: 3% 30px;
+  padding: 3% 0;
   margin: 20px 0 10px 0;
   text-align: center;
   color: #6581CD;
