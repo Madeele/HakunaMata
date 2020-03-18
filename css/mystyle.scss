@@ -365,28 +365,41 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
             font-weight: 600;
             margin: 0 0 5% 30%;
         }
+        &__days{
+                width: 10%;
+                height: 100%;
+                max-height: 100%;
+                display: inline-grid;
+                grid-template-columns: auto;
+                margin-left: -20%;
+                font-size: 20px;
+        }
 
         &__table{
-            width: 100%;
+            width: 140%;
             height: 60%;
             background-color: $grey;
             border-radius: 20px;
             text-align: center;
+            
+            
 
             &__grid{
-                width: 95%;
+                width: 85%;
                 height: 100%;
                 max-height: 100%;
                 display: inline-grid;
-                grid-template-columns: auto auto auto auto auto auto auto auto;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+                margin-right: -20%;
 
                 %green_elements{
                     background-color: $green;
+                    width: 85%;
                     height: 20%;
                     border-radius: 20px;
                     margin: 40% 3%;
-                    padding: 5%;
-                    font-size: 25px;
+                    padding: 13% 2% 0 2%;
+                    font-size: 12px;
                 }
 
                 %red_elements{
@@ -394,8 +407,9 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
                     height: 20%;
                     border-radius: 20px;
                     margin:40% 3%;
-                    padding: 5%;
-                    font-size: 25px;
+                    padding: 13% 2% 0 2%;
+                    font-size: 12px;
+                    width: 85%;
                 }
 
                 &__element1{
@@ -470,6 +484,34 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
                 &__element24{
                     @extend %green_elements;
                 }
+                &__element25{
+                    @extend %green_elements;
+                }
+                &__element26{
+                    @extend %red_elements;
+                }
+                &__element27{
+                    @extend %green_elements;
+                }
+                &__element28{
+                    @extend %green_elements;
+                }
+                &__element29{
+                    @extend %green_elements;
+                }
+                &__element30{
+                    @extend %green_elements;
+                }
+                &__element31{
+                    @extend %green_elements;
+                }
+                &__element32{
+                    @extend %red_elements;
+                }
+                &__element33{
+                    @extend %green_elements;
+                }
+                
 
             }
         }
