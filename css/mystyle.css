@@ -314,6 +314,8 @@ body {
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
 }
 
 .faq__answers_text {
@@ -322,14 +324,7 @@ body {
   width: 100%;
   background-color: #fff;
   right: -100%;
-  overflow-y: scroll;
-}
-
-.faq__answers_text .faq__answers_text-content {
-  clear: both;
-  max-width: 75%;
-  margin: 0 auto;
-  background-color: #6581CD;
+  padding-left: -0%;
 }
 
 .faq__answers_text .faq__answers_close {
@@ -338,6 +333,12 @@ body {
   float: right;
   cursor: pointer;
   color: #6581CD;
+}
+
+.faq__answers_text .faq__answers_text-content {
+  clear: both;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 /*******************************CALENDAR*******************************/

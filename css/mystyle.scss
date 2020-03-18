@@ -277,6 +277,7 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
             border-radius: 20px;
             text-align: center;
             cursor: pointer;
+            box-shadow: 4px 8px 6px #00000021;
         }
 
         &_text{
@@ -285,20 +286,19 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
             width: 100%;
             background-color: $white;
             right: -100%;
-            overflow-y: scroll;
+            padding-left: -0%;
 
-            .faq__answers_text-content{
-                clear: both;
-                max-width: 75%;
-                margin: 0 auto;
-                background-color:$blue;
-            }
             .faq__answers_close{
                 font-size: 50px;
                 margin: 10px 10px 0 0;
                 float: right;
                 cursor: pointer;
                 color: $blue;
+            }
+            .faq__answers_text-content{
+                clear: both;
+                max-width: 75%;
+                margin: 0 auto;
             }
         }
     }
