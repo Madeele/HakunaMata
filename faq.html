@@ -26,21 +26,46 @@
 			</header>
 		</div>
 		<div class="faq__answers">
-			<div class="faq__answers_el">How to get SU?</div>
-			<div class="faq__answers_el">How to get SU?</div>
-			<div class="faq__answers_el">How to get SU?</div>
-			<div class="faq__answers_el">How to get SU?</div>
+			<div class="faq__answers_el">What programmes do you offer?</div>
+			<div class="faq__answers_el">What is the difference between an AP programme, a Bachelor
+				and a Bachelor’s top-up?</div>
+			<div class="faq__answers_el">How can I apply for an AP or a Bachelor’s programme at BAAA?</div>
+			<div class="faq__answers_el">What is an SU?</div>
+			<div class="faq__answers_el">Is an internship part of my studies?</div>
+			<div class="faq__answers_el">How can I apply for Housing?</div>
 
-			<div class="faq__answers_text">
+			<div class="faq__answers_text faq__answers_text0">
 				<span class="faq__answers_close">&times;</span>
+
+				<h2>fdsfdsfdsfdsfs</h2>
+
+				<p>At Business Academy Aarhus we have three types of degree programmes taught in English -
+					Academy Profession degrees (AP), Bachelor's degree programmes and Bachelor's top-up
+					degree programmes. All of our degree programmes are recognised by the Danish Ministry of
+					Education. They are also internationally recognised by the European Credit Transfer System
+					(ECTS).</p>
+			</div>
+			<div class="faq__answers_text faq__answers_text1">
+				<span class="faq__answers_close">&times;</span>
+
+				<h2>Bla Bla Bla</h2>
+
+				<p>At Business Academy Aarhus we have three types of degree programmes taught in English -
+					Academy Profession degrees (AP), Bachelor's degree programmes and Bachelor's top-up
+					degree programmes. All of our degree programmes are recognised by the Danish Ministry of
+					Education. They are also internationally recognised by the European Credit Transfer System
+					(ECTS).</p>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".faq__answers_el").click(function(){
+			var answersElNum = $(".faq__answers_el");
+			var answersTextNum = $(".faq__answers_text1");
+			
+			$("answersElNum").click(function(){
             	$(".faq__answers_text").animate({right: "0%"}, 200);
         	});
         

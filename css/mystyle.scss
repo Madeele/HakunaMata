@@ -253,7 +253,8 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
             width: 75%;
             margin: 0 auto;
             background-color: #fff;
-            padding: 20px 2.5%;
+            padding: 30px 2.5%;
+            text-align: center;
             border-radius: 15px;
         }
     }
@@ -287,6 +288,7 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
 
             .faq__answers_close{
                 font-size: 50px;
+                margin: 10px 10px 0 0;
                 float: right;
                 cursor: pointer;
                 color: $blue;
