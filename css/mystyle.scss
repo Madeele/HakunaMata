@@ -262,7 +262,7 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
     &__answers{
         width: 65%;
         height: 100%;
-        background-color: rgb(156, 116, 116);
+        background-color: $white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -283,9 +283,16 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
             position: absolute;
             height: 100%;
             width: 100%;
-            background-color: rgb(187, 193, 197);
+            background-color: $white;
             right: -100%;
+            overflow-y: scroll;
 
+            .faq__answers_text-content{
+                clear: both;
+                max-width: 75%;
+                margin: 0 auto;
+                background-color:$blue;
+            }
             .faq__answers_close{
                 font-size: 50px;
                 margin: 10px 10px 0 0;

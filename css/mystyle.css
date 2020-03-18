@@ -289,7 +289,7 @@ body {
 .faq__answers {
   width: 65%;
   height: 100%;
-  background-color: #9c7474;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,8 +320,16 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #bbc1c5;
+  background-color: #fff;
   right: -100%;
+  overflow-y: scroll;
+}
+
+.faq__answers_text .faq__answers_text-content {
+  clear: both;
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: #6581CD;
 }
 
 .faq__answers_text .faq__answers_close {
