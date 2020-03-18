@@ -12,11 +12,7 @@ body {
 }
 
 /*******************************INDEX*******************************/
-<<<<<<< Updated upstream
-.container, .container2, .faq {
-=======
-.container, .container2, .container3, .admin__container {
->>>>>>> Stashed changes
+.container, .container2, .faq, .admin__container {
   width: 100%;
   height: 100%;
   overflow: hidden;
