@@ -12,7 +12,7 @@ body {
 }
 
 /*******************************INDEX*******************************/
-.container, .container2, .faq, .admin__container {
+.container, .container2, .faq, .test_container, .test_container2, .test_container3, .test_container4, .test_container5, .test_container6, .test_container7, .admin__container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -304,13 +304,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: -1%;
 }
 
 .faq__answers_el {
   width: 50%;
   padding: 20px;
   background-color: #FAFAFA;
-  margin: 15px 0;
+  margin-top: 15px;
   border-radius: 20px;
   text-align: center;
   cursor: pointer;
@@ -343,26 +344,51 @@ body {
   margin: 15px auto 0 auto;
 }
 
-.faq__answers_text .faq__answers_text-content h2 {
+.faq__answers_text h2 {
   font-size: 35px;
   margin: 15px 0;
   color: #6581CD;
 }
 
-.faq__answers_text .faq__answers_text-content ul {
+.faq__answers_text ul {
   margin: 20px 0 20px 25px;
   color: #262626;
   font-size: 20px;
 }
 
-.faq__answers_text .faq__answers_text-content p {
+.faq__answers_text h2 {
+  font-size: 35px;
+  margin: 15px 0;
+  color: #6581CD;
+}
+
+.faq__answers_text ul {
+  margin: 20px 0 20px 25px;
+  color: #262626;
+  font-size: 20px;
+}
+
+.faq__answers_text p {
   color: #262626;
   font-size: 20px;
   margin: 10px 0;
 }
 
-.faq__answers_text .faq__answers_text-content a {
+.faq__answers_text a {
   color: #E37B7B;
+}
+
+.faq__answers .faq__answers_el1, .faq__answers .faq__answers_el2, .faq__answers .faq__answers_el3, .faq__answers .faq__answers_el4, .faq__answers .faq__answers_el5, .faq__answers .faq__answers_el6, .faq__answers .faq__answers_el7 {
+  width: 50%;
+  padding: 20px;
+  background-color: #FAFAFA;
+  margin-top: 25px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 8px 6px #00000021;
+          box-shadow: 4px 8px 6px #00000021;
+  font-size: 20px;
 }
 
 /*******************************CALENDAR*******************************/
@@ -464,6 +490,31 @@ body {
   padding: 13% 2% 0 2%;
   font-size: 12px;
   width: 85%;
+}
+
+/*******************************TEST*******************************/
+.test_container2 {
+  display: none;
+}
+
+.test_container3 {
+  display: none;
+}
+
+.test_container4 {
+  display: none;
+}
+
+.test_container5 {
+  display: none;
+}
+
+.test_container6 {
+  display: none;
+}
+
+.test_container7 {
+  display: none;
 }
 
 /*******************************ADMIN PANEL*******************************/
