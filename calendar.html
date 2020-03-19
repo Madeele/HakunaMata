@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/mystyle.css">
 	<link rel="icon" type="image/x-icon" href=""/>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 	<title>Study Counseling | Business Academy Aarhus</title>
 </head>
 
@@ -18,58 +20,83 @@
 		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
 		<div class="calendar__container__content">
 			<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
-			<header class="calendar__container__content__header">
-				<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
-			</header>
+				<header class="calendar__container__content__header">
+					<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
+				</header>
 			<div class="calendar__container__content__table">
 				<div class="calendar__container__content__days">
 					<div class="calendar__container__content__days__element1">Monday</div>
 					<div class="calendar__container__content__days__element1">Tuesday</div>
 					<div class="calendar__container__content__days__element1">Wednesday</div>
-			</div>
-				<div class="calendar__container__content__table__grid">
-					<div class="calendar__container__content__table__grid__element1">09:00 - 09:30</div>
- 					<div class="calendar__container__content__table__grid__element2">09:30 - 10:00</div>
- 					<div class="calendar__container__content__table__grid__element3">10:00 - 10:30</div>
- 					<div class="calendar__container__content__table__grid__element4">10:30 - 11:00</div>
- 					<div class="calendar__container__content__table__grid__element5">11:00 - 11:30</div>
- 					<div class="calendar__container__content__table__grid__element6">11:30 - 12:00</div>
- 					<div class="calendar__container__content__table__grid__element7">12:00 - 12:30</div>
-					<div class="calendar__container__content__table__grid__element8">12:30 - 13:00</div>
-					<div class="calendar__container__content__table__grid__element9">13:00 - 13:30</div>
-					<div class="calendar__container__content__table__grid__element9">13:30 - 14:00</div>
-					<div class="calendar__container__content__table__grid__element10">14:00 - 14:30</div>
- 					<div class="calendar__container__content__table__grid__element11">14:30 - 15:00</div>
- 					<div class="calendar__container__content__table__grid__element12">09:00 - 09:30</div>
- 					<div class="calendar__container__content__table__grid__element13">09:30 - 10:00</div>
- 					<div class="calendar__container__content__table__grid__element14">10:00 - 10:30</div>
- 					<div class="calendar__container__content__table__grid__element15">10:30 - 11:00</div>
-					<div class="calendar__container__content__table__grid__element16">11:00 - 11:30</div>
-  					<div class="calendar__container__content__table__grid__element17">11:30 - 12:00</div>
-					<div class="calendar__container__content__table__grid__element18">12:00 - 12:30</div>
-					<div class="calendar__container__content__table__grid__element19">12:30 - 13:00</div>
- 					<div class="calendar__container__content__table__grid__element20">13:00 - 13:30</div>
- 					<div class="calendar__container__content__table__grid__element21">13:30 - 14:00</div>
- 					<div class="calendar__container__content__table__grid__element22">14:00 - 14:30</div>
-  					<div class="calendar__container__content__table__grid__element23">14:30 - 15:00</div>
-					<div class="calendar__container__content__table__grid__element24">09:00 - 09:30</div> 
-					<div class="calendar__container__content__table__grid__element25">09:30 - 10:00</div> 
-					<div class="calendar__container__content__table__grid__element26">10:00 - 10:30</div> 
-					<div class="calendar__container__content__table__grid__element27">10:30 - 11:00</div> 
-					<div class="calendar__container__content__table__grid__element28">11:00 - 11:30</div> 
-					<div class="calendar__container__content__table__grid__element29">11:30 - 12:00</div> 
-					<div class="calendar__container__content__table__grid__element30">12:00 - 12:30</div> 
-					<div class="calendar__container__content__table__grid__element31">12:30 - 13:00</div> 
-					<div class="calendar__container__content__table__grid__element32">13:00 - 13:30</div> 
-					<div class="calendar__container__content__table__grid__element33">13:30 - 14:00</div> 
-					<div class="calendar__container__content__table__grid__element33">14:00 - 14:30</div>
-					<div class="calendar__container__content__table__grid__element33">14:30 - 15:00</div>
-
 				</div>
-			</div>
+			
+				<div class="calendar__container__content__table__grid">
+					<button class="calendar__container__content__table__grid__element1" id="btn_hours">09:00 - 09:30</button>
+ 					<button class="calendar__container__content__table__grid__element2">09:30 - 10:00</button>
+ 					<button class="calendar__container__content__table__grid__element3">10:00 - 10:30</button>
+ 					<button class="calendar__container__content__table__grid__element4">10:30 - 11:00</button>
+ 					<button class="calendar__container__content__table__grid__element5">11:00 - 11:30</button>
+ 					<button class="calendar__container__content__table__grid__element6">11:30 - 12:00</button>
+ 					<button class="calendar__container__content__table__grid__element7">12:00 - 12:30</button>
+					<button class="calendar__container__content__table__grid__element8">12:30 - 13:00</button>
+					<button class="calendar__container__content__table__grid__element9">13:00 - 13:30</button>
+					<button class="calendar__container__content__table__grid__element9">13:30 - 14:00</button>
+					<button class="calendar__container__content__table__grid__element10">14:00 - 14:30</button>
+ 					<button class="calendar__container__content__table__grid__element11">14:30 - 15:00</button>
+ 					<button class="calendar__container__content__table__grid__element12">09:00 - 09:30</button>
+ 					<button class="calendar__container__content__table__grid__element13">09:30 - 10:00</button>
+ 					<button class="calendar__container__content__table__grid__element14">10:00 - 10:30</button>
+ 					<button class="calendar__container__content__table__grid__element15">10:30 - 11:00</button>
+					<button class="calendar__container__content__table__grid__element16">11:00 - 11:30</button>
+  					<button class="calendar__container__content__table__grid__element17">11:30 - 12:00</button>
+					<button class="calendar__container__content__table__grid__element18">12:00 - 12:30</button>
+					<button class="calendar__container__content__table__grid__element19">12:30 - 13:00</button>
+ 					<button class="calendar__container__content__table__grid__element20">13:00 - 13:30</button>
+ 					<button class="calendar__container__content__table__grid__element21">13:30 - 14:00</button>
+ 					<button class="calendar__container__content__table__grid__element22">14:00 - 14:30</button>
+  					<button class="calendar__container__content__table__grid__element23">14:30 - 15:00</button>
+					<button class="calendar__container__content__table__grid__element24">09:00 - 09:30</button> 
+					<button class="calendar__container__content__table__grid__element25">09:30 - 10:00</button> 
+					<button class="calendar__container__content__table__grid__element26">10:00 - 10:30</button> 
+					<button class="calendar__container__content__table__grid__element27">10:30 - 11:00</button> 
+					<button class="calendar__container__content__table__grid__element28">11:00 - 11:30</button> 
+					<button class="calendar__container__content__table__grid__element29">11:30 - 12:00</button> 
+					<button class="calendar__container__content__table__grid__element30">12:00 - 12:30</button> 
+					<button class="calendar__container__content__table__grid__element31">12:30 - 13:00</button> 
+					<button class="calendar__container__content__table__grid__element32">13:00 - 13:30</button> 
+					<button class="calendar__container__content__table__grid__element33">13:30 - 14:00</button> 
+					<button class="calendar__container__content__table__grid__element33">14:00 - 14:30</button>
+					<button class="calendar__container__content__table__grid__element33">14:30 - 15:00</button>
+				</div>
+			</div>		 
 		</div>
 	</div>
+	<div class="calendar__container2">
+		<span class="faq__answers_close">&times;</span>
+		<h3>Housing for full degree students</h3>
+
+		<p2>You must apply for housing as soon as you have decided to study in Aarhus – before you
+			receive your admission letter.</p2>
+		<p2>Business Academy Aarhus is unfortunately not able to offer housing as we do not have any
+			dormitories. However, you can apply for housing via Student Housing Aarhus, which
+			administers residences for students across Aarhus.</p2>
+
+
+	</div>
 	<script type="text/javascript" src=""></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn_hours").click(function(){
+				console.log("add style");
+				$(".calendar__container").css({
+					"display":"none"
+				});
+				$(".calendar__container2").css({
+					"display":"block"
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
