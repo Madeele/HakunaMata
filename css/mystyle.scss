@@ -659,4 +659,110 @@ input[type=submit] {
     }
     }
 
-    
+    /*******************************TEST*******************************/
+    .test_container{
+        @extend %mainContainer;
+        background-color: $white;
+    }
+
+    .test_container2a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container2b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container2c_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container3a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container3b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container5a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container5a_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result2{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result3{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result2{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result3{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result4{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+
