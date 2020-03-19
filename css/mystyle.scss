@@ -5,6 +5,7 @@ $orange: #FFB275;
 $blue: #6581CD;
 $dark: #262626;
 $grey: #FAFAFA;
+$dark-grey: #DDDDDD;
 $white: #fff;
 
 *,
@@ -375,9 +376,8 @@ body{
 /*******************************CALENDAR*******************************/
 
 .calendar__container{
-    width: 100%;
-    height: 100%;
-    background-color: $white;
+    @extend %mainContainer;
+
     &__item{
         position: absolute;
     }
@@ -439,12 +439,14 @@ body{
 
                 %green_elements{
                     background-color: $green;
-                    width: 85%;
+                    width: 90%;
                     height: 20%;
                     border-radius: 20px;
                     margin: 40% 3%;
-                    padding: 13% 2% 0 2%;
-                    font-size: 12px;
+                    padding: 13% 2% 30% 2%;
+                    font-size: 13px;
+                    border: none;
+                    cursor: pointer;
                 }
 
                 %red_elements{
@@ -452,9 +454,11 @@ body{
                     height: 20%;
                     border-radius: 20px;
                     margin:40% 3%;
-                    padding: 13% 2% 0 2%;
-                    font-size: 12px;
-                    width: 85%;
+                    padding: 13% 2% 30% 2%;
+                    font-size: 13px;
+                    width: 90%;
+                    border: none;
+                    cursor: pointer;
                 }
 
                 &__element1{
@@ -562,36 +566,94 @@ body{
         }
     }
 }
-/*******************************TEST*******************************/
-.test_container{
-    @extend %mainContainer;
-}
-.test_container2{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container3{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container4{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container5{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container6{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container7{
-    @extend %mainContainer;
-    display: none;
+/******************************** Popup container*****************************************************/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color:$grey;
+    color: $dark;
+    text-align: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    -webkit-box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
+  }
+
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+label{
+    font-size: 18px;
+    color: $blue;
+    margin-left: 5%;
 }
 
+  input, select {
+    width: 90%; /* Full width */
+    padding: 5px; /* Some padding */ 
+    background-color: $dark-grey;
+    border: none;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 16px; /* Bottom margin */
+    text-align: center;
+    display: block;
+    color: $dark;
+    font-size: 18px;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
+  input::placeholder{
+      font-size: 14px;
+  }
+
+  input[type=datetime-local]{
+      text-align: center;
+      margin: 25px auto 15px auto;
+  }
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    
+    background-color: $red;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px auto 15px auto;
+  }
 
 /*******************************ADMIN PANEL*******************************/
 .admin__container{

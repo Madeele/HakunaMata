@@ -12,7 +12,7 @@ body {
 }
 
 /*******************************INDEX*******************************/
-.container, .container2, .faq, .test_container, .test_container2, .test_container3, .test_container4, .test_container5, .test_container6, .test_container7, .admin__container {
+.container, .container2, .faq, .calendar__container, .admin__container {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -392,12 +392,6 @@ body {
 }
 
 /*******************************CALENDAR*******************************/
-.calendar__container {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-
 .calendar__container__item {
   position: absolute;
 }
@@ -474,12 +468,14 @@ body {
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element1, .calendar__container__content__table__grid .calendar__container__content__table__grid__element2, .calendar__container__content__table__grid .calendar__container__content__table__grid__element3, .calendar__container__content__table__grid .calendar__container__content__table__grid__element6, .calendar__container__content__table__grid .calendar__container__content__table__grid__element7, .calendar__container__content__table__grid .calendar__container__content__table__grid__element8, .calendar__container__content__table__grid .calendar__container__content__table__grid__element9, .calendar__container__content__table__grid .calendar__container__content__table__grid__element11, .calendar__container__content__table__grid .calendar__container__content__table__grid__element12, .calendar__container__content__table__grid .calendar__container__content__table__grid__element13, .calendar__container__content__table__grid .calendar__container__content__table__grid__element14, .calendar__container__content__table__grid .calendar__container__content__table__grid__element16, .calendar__container__content__table__grid .calendar__container__content__table__grid__element17, .calendar__container__content__table__grid .calendar__container__content__table__grid__element18, .calendar__container__content__table__grid .calendar__container__content__table__grid__element19, .calendar__container__content__table__grid .calendar__container__content__table__grid__element20, .calendar__container__content__table__grid .calendar__container__content__table__grid__element21, .calendar__container__content__table__grid .calendar__container__content__table__grid__element22, .calendar__container__content__table__grid .calendar__container__content__table__grid__element23, .calendar__container__content__table__grid .calendar__container__content__table__grid__element24, .calendar__container__content__table__grid .calendar__container__content__table__grid__element25, .calendar__container__content__table__grid .calendar__container__content__table__grid__element27, .calendar__container__content__table__grid .calendar__container__content__table__grid__element28, .calendar__container__content__table__grid .calendar__container__content__table__grid__element29, .calendar__container__content__table__grid .calendar__container__content__table__grid__element30, .calendar__container__content__table__grid .calendar__container__content__table__grid__element31, .calendar__container__content__table__grid .calendar__container__content__table__grid__element33 {
   background-color: #93BF71;
-  width: 85%;
+  width: 90%;
   height: 20%;
   border-radius: 20px;
   margin: 40% 3%;
-  padding: 13% 2% 0 2%;
-  font-size: 12px;
+  padding: 13% 2% 30% 2%;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
 }
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32 {
@@ -487,34 +483,129 @@ body {
   height: 20%;
   border-radius: 20px;
   margin: 40% 3%;
-  padding: 13% 2% 0 2%;
-  font-size: 12px;
-  width: 85%;
+  padding: 13% 2% 30% 2%;
+  font-size: 13px;
+  width: 90%;
+  border: none;
+  cursor: pointer;
 }
 
-/*******************************TEST*******************************/
-.test_container2 {
-  display: none;
+/******************************** Popup container*****************************************************/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.test_container3 {
-  display: none;
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  background-color: #FAFAFA;
+  color: #262626;
+  text-align: left;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
-.test_container4 {
-  display: none;
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
-.test_container5 {
-  display: none;
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.test_container6 {
-  display: none;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.test_container7 {
-  display: none;
+label {
+  font-size: 18px;
+  color: #6581CD;
+  margin-left: 5%;
+}
+
+input, select {
+  width: 90%;
+  /* Full width */
+  padding: 5px;
+  /* Some padding */
+  background-color: #DDDDDD;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  text-align: center;
+  display: block;
+  color: #262626;
+  font-size: 18px;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+input[type=datetime-local] {
+  text-align: center;
+  margin: 25px auto 15px auto;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #E37B7B;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 30px auto 15px auto;
 }
 
 /*******************************ADMIN PANEL*******************************/
