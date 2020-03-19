@@ -563,7 +563,7 @@ body{
   /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
-    width: 800px;
+    width: 1100px;
     background-color:$grey;
     color: $dark;
     text-align: center;
@@ -571,6 +571,7 @@ body{
     padding: 8px 0;
     position: absolute;
     z-index: 1;
+    margin-top: -200px;
   }
   
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
@@ -589,6 +590,35 @@ body{
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+    text-align: center;
+  }
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    
+    background-color: $blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
 
 
