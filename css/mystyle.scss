@@ -553,44 +553,43 @@ body{
         }
     }
 }
-.calendar__container2{
-    @extend %mainContainer;
-    display: none;
-            height: 80%;
-            width: 80%;
-            margin: 10%;
-            background-color: $white;
-            padding-left: -0%;
-            
-}
-/*******************************TEST*******************************/
-.test_container{
-    @extend %mainContainer;
-}
-.test_container2{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container3{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container4{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container5{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container6{
-    @extend %mainContainer;
-    display: none;
-}
-.test_container7{
-    @extend %mainContainer;
-    display: none;
-}
+/******************************** Popup container*****************************************************/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 800px;
+    background-color:$grey;
+    color: $dark;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 
 
 

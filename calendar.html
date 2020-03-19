@@ -29,9 +29,28 @@
 					<div class="calendar__container__content__days__element1">Tuesday</div>
 					<div class="calendar__container__content__days__element1">Wednesday</div>
 				</div>
-			
+				<div class="popup" onclick="myFunction()">
+					<span class="popuptext" id="myPopup">
+						<form action="/#">
+							<label for="fname">Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						
+							<label for="lname">E-mail</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your E-mail addresss">
+
+							<label for="lname">Phone number</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your phone number">
+						
+						
+							<label for="subject">Subject</label>
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						
+							<input type="submit" value="Submit">
+						  </form>
+					</span>
+				  </div>
 				<div class="calendar__container__content__table__grid">
-					<button class="calendar__container__content__table__grid__element1" id="btn_hours">09:00 - 09:30</button>
+					<button class="calendar__container__content__table__grid__element1" onclick="myFunction()" id="btn_hours">09:00 - 09:30</button>
  					<button class="calendar__container__content__table__grid__element2">09:30 - 10:00</button>
  					<button class="calendar__container__content__table__grid__element3">10:00 - 10:30</button>
  					<button class="calendar__container__content__table__grid__element4">10:30 - 11:00</button>
@@ -71,32 +90,15 @@
 			</div>		 
 		</div>
 	</div>
-	<div class="calendar__container2">
-		<span class="faq__answers_close">&times;</span>
-		<h3>Housing for full degree students</h3>
-
-		<p2>You must apply for housing as soon as you have decided to study in Aarhus – before you
-			receive your admission letter.</p2>
-		<p2>Business Academy Aarhus is unfortunately not able to offer housing as we do not have any
-			dormitories. However, you can apply for housing via Student Housing Aarhus, which
-			administers residences for students across Aarhus.</p2>
-
-
-	</div>
+	
 	<script type="text/javascript" src=""></script>
 	<script>
-		$(document).ready(function(){
-			$("#btn_hours").click(function(){
-				console.log("add style");
-				$(".calendar__container").css({
-					"display":"none"
-				});
-				$(".calendar__container2").css({
-					"display":"block"
-				});
-			});
-		});
-	</script>
+		// When the user clicks on <div>, open the popup
+		function myFunction() {
+		  var popup = document.getElementById("myPopup");
+		  popup.classList.add("show");
+		}
+		</script>
 </body>
 
 </html>
