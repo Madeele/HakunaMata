@@ -234,8 +234,8 @@ body{
         width: 35%;
         height: 100%;
         -webkit-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+        box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
         z-index:99;
         display: flex;
         flex-direction: column;
@@ -268,12 +268,13 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-top: -1%;
 
         &_el{
             width: 50%;
             padding: 20px;
             background-color: $grey;
-            margin: 15px 0;
+            margin-top: 15px;
             border-radius: 20px;
             text-align: center;
             cursor: pointer;
@@ -301,28 +302,60 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
                 clear: both;
                 max-width: 75%;
                 margin: 15px auto 0 auto;
-
-                h2{
-                    font-size: 35px;
-                    margin: 15px 0;
-                    color: $blue;
-                }
-
-                ul{
-                    margin: 20px 0 20px 25px;
-                    color: $dark;
-                    font-size: 20px;
-                }
-
-                p{
-                    color: $dark;
-                    font-size: 20px;
-                }
-
-                a{
-                    color: $red;
-                }
             }
+            h2{
+                font-size: 35px;
+                margin: 15px 0;
+                color: $blue;
+            }
+            ul{
+                margin: 20px 0 20px 25px;
+                color: $dark;
+                font-size: 20px;
+            }
+
+            p{
+                color: $dark;
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            a{
+                color: $red;
+            }
+            
+        }
+        %elses {
+            width: 50%;
+            padding: 20px;
+            background-color: $grey;
+            margin-top: 25px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 4px 8px 6px #00000021;
+            font-size: 20px;
+        }
+        &_el1 {
+            @extend %elses;
+        }
+        &_el2 {
+            @extend %elses;
+        }
+        &_el3 {
+            @extend %elses;
+        }
+        &_el4 {
+            @extend %elses;
+        }
+        &_el5 {
+            @extend %elses;
+        }
+        &_el6 {
+            @extend %elses;
+        }
+        &_el7 {
+            @extend %elses;
         }
     }
 }
@@ -398,11 +431,7 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
                     height: 20%;
                     border-radius: 20px;
                     margin: 40% 3%;
-<<<<<<< Updated upstream
                     padding: 13% 2% 0 2%;
-=======
-                    padding: 12% 2% 0 2%;
->>>>>>> Stashed changes
                     font-size: 12px;
                 }
 
@@ -411,11 +440,7 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
                     height: 20%;
                     border-radius: 20px;
                     margin:40% 3%;
-<<<<<<< Updated upstream
                     padding: 13% 2% 0 2%;
-=======
-                    padding: 12% 2% 0 2%;
->>>>>>> Stashed changes
                     font-size: 12px;
                     width: 85%;
                 }
@@ -525,6 +550,36 @@ box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
         }
     }
 }
+/*******************************TEST*******************************/
+.test_container{
+    @extend %mainContainer;
+}
+.test_container2{
+    @extend %mainContainer;
+    display: none;
+}
+.test_container3{
+    @extend %mainContainer;
+    display: none;
+}
+.test_container4{
+    @extend %mainContainer;
+    display: none;
+}
+.test_container5{
+    @extend %mainContainer;
+    display: none;
+}
+.test_container6{
+    @extend %mainContainer;
+    display: none;
+}
+.test_container7{
+    @extend %mainContainer;
+    display: none;
+}
+
+
 
 /*******************************ADMIN PANEL*******************************/
 .admin__container{
