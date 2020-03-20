@@ -21,8 +21,6 @@ body{
 }
 @import url("https://use.typekit.net/ndh0umu.css");
 
-.dots{}
-
 .dot__el1{
     width: 30px;
     height: 30px;
@@ -458,12 +456,6 @@ body{
         height: 100%;
         margin: 0 auto;
 
-        &__img{
-            width: 80px;
-            height: 80px;
-            margin: -16% -30% ;
-            position: absolute;
-        }
 
         &__header{
             width: 70%;
@@ -475,7 +467,15 @@ body{
             text-align: center;
             color: $blue;
             font-weight: 600;
-            margin: 0 0 5% 30%;
+            margin: 0 0 5% 0%;
+            display: flex;
+            align-items: center;
+
+            .calendar__container__content__img{
+                width: 80px;
+                height: 80px;
+                padding-left: 10px;
+            }
         }
         &__days{
                 width: 10%;
@@ -658,7 +658,7 @@ body{
     padding: 8px 0;
     position: fixed;
     z-index: 1;
-    -webkit-box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
   }
