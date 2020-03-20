@@ -11,145 +11,8 @@
 	<link rel="icon" type="image/x-icon" href=""/>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<!--<script type="text/javascript" src="script.js"></script>-->
 
 	<title>Study Counseling | Business Academy Aarhus</title>
-
-	<script>
-		var myQuestions = [
-    {
-        question: "Do you already have a university degree?"
-        answers: {
-            a: "No, I am fresh out of high school.",
-            b: "I completed an AP Program and want to continue with a Top-Up",
-            c: "- I am a proud owner of a bachelor's degree and I want to continue my education with a top-up program."
-        },
-    }
-
-    {
-        question: "Which of these attributes describe you best?"
-        answers: {
-            a: "Creative and artistic",
-            b: "Science, analysis and data",
-            c: "Managing and planning"
-        },
-    }
-
-    {
-        question: "Which of these attributes describe you best?"
-        answers: {
-            a: "Creative and artistic",
-            b: "Science, analysis and data",
-            c: "Managing and planning"
-        },
-    }
-
-    {
-        question: "Do you see your strength in practical knowledge or rather technical knowledge?"
-        answers: {
-            a: "Multimedia Design",
-            b: "Marketing Management",
-            c: "IT Technology",
-            d: "Financial Management and Services",
-            e: "Chemical and Biotechnical Science"
-        },
-    }
-
-    {
-        question: "Do you see your strength in practical knowledge or rather technical knowledge?"
-        answers: {
-            a: "Web Development",
-            b: "Digital Concept Development",
-            c: "Product Development and Integrative Technology",
-            d: "Innovation and Entrepreneurship",
-            e: "Chemical and Biotechnical Technology and Food Technology"
-        },
-    }
-
-    {
-        question: "Have you always dreamed of becoming a natural scientist?"
-        answers: {
-            a: "Yes",
-            b: "No"
-        },
-    }
-
-    {
-        question: "Have you always dreamed of becoming a natural scientist?"
-        answers: {
-            a: "Yes",
-            b: "No"
-        },
-    }
-
-    {
-        question: "Do you want to complete a full Bachelor Program?"
-        answers: {
-            a: "Yes",
-            b: "No"
-        },
-    }
-
-    {
-        question: "What career path do you find most appealing?"
-        answers: {
-            a: "IT consultant",
-            b: "System administrator ",
-            c: "Sales",
-            d: "Product Manager ",
-            e: "UX Designer",
-            f: "Web Developer"
-        },
-    }
-
-    {
-        question: "What career path do you find most appealing?"
-        answers: {
-            a: "Digital Designer",
-            b: "Social Media Coordinator",
-            c: "Research & Development",
-            d: "Entrepreneur",
-            e: "Product Developer",
-            f: "Energy Optimization",
-            g: "Programmer",
-            h: "Interface Developer"
-        },
-    }
-
-    {
-        question: "Do you already have a university degree?"
-        answers: {
-            a: "No, I am fresh out of high school.",
-            b: "I completed an AP Program and want to continue with a Top-Up",
-            c: "- I am a proud owner of a bachelor's degree and I want to continue my education with a top-up program."
-        },
-    }
-];
-
-function showQuestions(){
-	for(var i=0; i<=questions; i++){
-		content.innerHTML = "<header class='container__header'><p>"+myQuestions.question+"</p></header>";
-		
-		var choice
-	};}
-};
-/*
-function play(){
-var content = document.getElementById("container-content");
-var header = document.getElementById("container-header");
-
-var questions = myQuestions.length;
-
-
-for(var i=0; i<=questions; i++){
-	content.innerHTML = "<header class='container__header'><p>"+myQuestions.question+"</p></header>";
-	
-	var choice
-};}
-
-play();*/
-	</script>
-
 </head>
 
 <body>
@@ -159,11 +22,10 @@ play();*/
 		<img src="images/orangecircle.svg" class="container__item container__item2" alt="orangeCircle">
 		<img src="images/orangecircle.svg" class="container__item container__item3" alt="orangeCircle">
 		<img src="images/turquoisecircle.svg" class="container__item container__item4" alt="turquoiseCircle">
-		<div class="container__content" id="container-content">
+		<div class="container__content">
 			<img src="images/avatarorange.svg" class="container__img" alt="avatar">
-			
-			<header class="container__header" id="container-header">
-				<p></p>
+			<header class="container__header">
+				<p>Do you have a university degree?</p>
 			</header>
 			<div class="question_answers">
 			<button class="test_container__btn" id="test1_btn">No</button>
@@ -173,8 +35,6 @@ play();*/
 		</div>
 		</div>
 	</div>
-<<<<<<< HEAD
-=======
 	<div class="test_container2a">
 		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
 		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
@@ -242,9 +102,14 @@ play();*/
 				<p>Do you see your strength in practical 
 					knowledge or rather technical knowledge?</p>
 			</header>
-			<button class="test_container__btn" id="test4_btn">SLIDER</button>
+			<div class="slidecontainer">
+				<p class="value_slide">Practical knowledge</p>
+				<p class="value_slide2">Technical knowledge</p>
+				<input type="range" min="1" max="5" value="50" class="slider" id="myRange">
+			<button class="test_container__btn" id="test4_btn">NEXT</button>
 		</div>
 	</div>
+</div>
 	<div class="test_container3b">
 		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
 		<img src="images/bluecircle.svg" class="container__item container__item1" alt="blueCircle">
@@ -257,7 +122,12 @@ play();*/
 				<p>Do you see your strength in practical 
 					knowledge or rather technical knowledge?</p>
 			</header>
-			<button class="test_container__btn" id="test4_btn2">SLIDER</button>
+			<div class="slidecontainer">
+				<p class="value_slide">Practical knowledge</p>
+				<p class="value_slide2">Technical knowledge</p>
+				<input type="range" min="1" max="5" value="50" class="slider" id="myRange">
+			<button class="test_container__btn" id="test4_btn2">OK</button>
+		</div>
 		</div>
 	</div>
 	<div class="test_container4b">
@@ -504,7 +374,6 @@ play();*/
 			<button class="test_container__btn" onclick="location.href='menu.html'" id="test_result_ok">OK</button>
 		</div>
 	</div>
->>>>>>> master
 
 	<script type="text/javascript" src=""></script>
 	<script> 
