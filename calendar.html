@@ -54,7 +54,7 @@
 							</select>
 							
 						
-							<input type="submit" id="submit-btn" value="Submit" onclick="showThanks()">
+							<input type="submit" id="submit-btn" value="Submit" onclick="validation(); showThanks()">
 						  </form>
 						</div>
 						<div class="thankyou__info" id="thanks">
@@ -114,16 +114,18 @@
 		  var popup = document.getElementById("myPopup");
 		  popup.classList.add("show");
 		}
-
+/*
 		function showThanks() {
 		  console.log("show/hide")
 		  var thanks = document.getElementById("thanks");
 		  var popup = document.getElementById("myPopup");
 		  popup.style="display: none";
 		  thanks.style="display: block";
-		}
+		}*/
 		
+		//Validation user's data
 		function validation(){
+			//Checking if input is empty. If yes, then infromation will show text about providing correct data
 			if( document.contactForm.firstname.value == "" ) {
 				alert( "Please provide your name!" );
 				document.contactForm.firstname.focus();
@@ -139,6 +141,7 @@
 				document.contactForm.email.focus();
 				return false;
 			}
+			//Checking if phone is empty and if it's a number and has 8 numbers
 			if( document.contactForm.phone.value == "" || isNaN( document.contactForm.phone.value ) ||
 				document.contactForm.phone.value.length != 8 ) {
 				
@@ -147,20 +150,22 @@
 				return false;
 			}
 			return( true );
-		}
-		
+		};
+		/*
 		var submit = document.getElementById("submit-btn");
-		submit.addEventListener("click", validation());
-
-		if(validation() === true){
-			function showThanks() {
+		submit.addEventListener("click", validation());*/
+		
+		//Showing information that appointment has been booked
+		function showThanks(){
+			if(validation() === true){
 				console.log("show/hide")
 				var thanks = document.getElementById("thanks");
 				var popup = document.getElementById("myPopup");
 				popup.style="display: none";
-				thanks.style="display: block";
+				thanks.style="display: fixed";
 			};
 		};
+		
 
 		
 		</script>

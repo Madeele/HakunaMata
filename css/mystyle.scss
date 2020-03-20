@@ -667,6 +667,10 @@ input[type=submit] {
     margin: 30px auto 15px auto;
   }
 
+  input:invalid{
+      border: 2px solid $red;
+  }
+
   .thankyou__info{
       display: none;
       position: fixed;
