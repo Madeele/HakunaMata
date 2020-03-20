@@ -18,9 +18,70 @@ body{
     font-size: 25px;
     height: 100vh;
     font-family: freight-sans-pro, sans-serif;
-
 }
 @import url("https://use.typekit.net/ndh0umu.css");
+
+
+/**
+.dot__el1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-48%, -50%);
+    background-color: rgb(114, 21, 21);
+    z-index: 111;
+    border-radius: 30px;
+    animation: .8s loadAnimation1;
+    animation-iteration-count: infinite;
+}
+
+.dot__el2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    transform: translate(-51%, -50%);
+    background-color: rgb(105, 63, 63);
+    z-index: 112;
+    border-radius: 30px;
+    animation: .8s loadAnimation2;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+}
+
+@keyframes loadAnimation1{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes loadAnimation2{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}**/
+
+
+
 /*******************************INDEX*******************************/
 %mainContainer {
     width: 100%;
@@ -637,7 +698,7 @@ label{
     text-align: center;
     display: block;
     color: $dark;
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px auto;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -656,7 +717,6 @@ label{
   }
   /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    
     background-color: $red;
     color: white;
     padding: 15px 20px;

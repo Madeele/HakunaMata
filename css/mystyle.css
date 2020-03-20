@@ -12,6 +12,63 @@ body {
   font-family: freight-sans-pro, sans-serif;
 }
 
+/**
+.dot__el1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-48%, -50%);
+    background-color: rgb(114, 21, 21);
+    z-index: 111;
+    border-radius: 30px;
+    animation: .8s loadAnimation1;
+    animation-iteration-count: infinite;
+}
+
+.dot__el2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    transform: translate(-51%, -50%);
+    background-color: rgb(105, 63, 63);
+    z-index: 112;
+    border-radius: 30px;
+    animation: .8s loadAnimation2;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+}
+
+@keyframes loadAnimation1{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes loadAnimation2{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}**/
 /*******************************INDEX*******************************/
 .container, .container2, .faq, .calendar__container, .admin__container, .test_container, .test_container2a, .test_container2b, .test_container2c_result, .test_container3a, .test_container3b, .test_container4b, .test_container4b_b, .test_container4b_result, .test_container4b_b_result, .test_container5a, .test_container5a_result, .test_container6a, .test_container6a_result, .test_container6a_result2, .test_container6a_result3, .test_container6b, .test_container6b_result, .test_container6b_result2, .test_container6b_result3, .test_container6b_result4 {
   width: 100%;
@@ -575,7 +632,7 @@ input, select {
   text-align: center;
   display: block;
   color: #262626;
-  font-size: 18px;
+  font-size: 15px;
   margin: 10px auto;
   font-family: Arial, Helvetica, sans-serif;
 }
