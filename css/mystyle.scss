@@ -21,11 +21,6 @@ body{
 }
 @import url("https://use.typekit.net/ndh0umu.css");
 
-<<<<<<< HEAD
-=======
-
-/**
->>>>>>> master
 .dot__el1{
     width: 30px;
     height: 30px;
@@ -81,7 +76,7 @@ body{
     to{
         transform: scale(1);
     }
-}**/
+}
 
 
 
@@ -124,6 +119,7 @@ body{
             text-align: center;
             color: $blue;
             font-weight: 600;
+            
         }
 
         .container__btn{
@@ -163,6 +159,7 @@ body{
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            box-shadow: 4px 8px 6px #00000021;
             
         }
     }
@@ -177,6 +174,7 @@ body{
             text-align: center;
             color: $blue;
             font-weight: 600;
+            box-shadow: 4px 8px 6px #00000021;
     }
 }
 
@@ -281,6 +279,7 @@ body{
         text-align: center;
         color: $blue;
         font-weight: 600;
+        box-shadow: 4px 8px 6px #00000021;
     }
 }
 
@@ -327,6 +326,7 @@ body{
             padding: 30px 2.5%;
             text-align: center;
             border-radius: 15px;
+            box-shadow: 4px 8px 6px #00000021;
         }
     }
 
@@ -663,9 +663,9 @@ body{
     padding: 8px 0;
     position: fixed;
     z-index: 1;
-    -webkit-box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
-    box-shadow: 4px 6px 9px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 8px 6px #00000021;
+    -moz-box-shadow: 4px 8px 6px #00000021;
+    box-shadow: 4px 8px 6px #00000021;
   }
 
   
@@ -817,107 +817,170 @@ input[type=submit] {
     .test_container{
         @extend %mainContainer;
         background-color: $white;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
 
     .test_container2a{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container2b{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container2c_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container3a{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container3b{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container4b{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container4b_b{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container4b_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container4b_b_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container5a{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container5a_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6a{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6a_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6a_result2{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6a_result3{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6b{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6b_result{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6b_result2{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6b_result3{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     .test_container6b_result4{
         @extend %mainContainer;
         background-color: $white;
         display:none;
+        .container__header{
+            box-shadow: 4px 8px 6px #00000021;
+        }
     }
     #test_result_ok{
     width: 15%;
@@ -945,6 +1008,7 @@ input[type=submit] {
         cursor: pointer;
         text-align: center;
         font-family: freight-sans-pro, sans-serif;
+        box-shadow: 4px 8px 6px #00000021;
         
     }
     .question_answers{
@@ -954,6 +1018,7 @@ input[type=submit] {
         grid-template-columns: auto auto ;
         font-family: freight-sans-pro, sans-serif;
     }
+    
     .slidecontainer {
         width: 100%;
       }
@@ -1009,7 +1074,9 @@ input[type=submit] {
       
       .ok_btn{
           width: 100%;
+          box-shadow: 4px 8px 6px #00000021;
       }
+
       .final_result {
           color: $orange;
       }
