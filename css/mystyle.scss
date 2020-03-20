@@ -16,9 +16,10 @@ $white: #fff;
 body{
     font-size: 25px;
     height: 100vh;
-    font-family: Arial;
+    font-family: freight-sans-pro, sans-serif;
 
 }
+@import url("https://use.typekit.net/ndh0umu.css");
 /*******************************INDEX*******************************/
 %mainContainer {
     width: 100%;
@@ -71,6 +72,7 @@ body{
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            font-family: freight-sans-pro, sans-serif;
 
         }
     }
@@ -84,6 +86,7 @@ body{
 
     &__btn-content{
         display: flex;
+        
 
         &__btn{
             width: 50%;
@@ -95,6 +98,7 @@ body{
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            
         }
     }
 
@@ -159,6 +163,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         
+        
         &__btn{
             padding: 3% 0;
             margin:40px 0 0 0;
@@ -171,6 +176,7 @@ body{
             cursor: pointer;
             flex:1;
             box-shadow: 4px 8px 6px #00000021;
+            font-family: freight-sans-pro, sans-serif;
 
         }
 
@@ -434,6 +440,7 @@ body{
                     font-size: 13px;
                     border: none;
                     cursor: pointer;
+                    font-family: freight-sans-pro, sans-serif;
                 }
 
                 %red_elements{
@@ -446,6 +453,7 @@ body{
                     width: 90%;
                     border: none;
                     cursor: pointer;
+                    font-family: freight-sans-pro, sans-serif;
                 }
 
                 &__element1{
@@ -790,6 +798,7 @@ input[type=submit] {
         border-radius: 20px;
         cursor: pointer;
         text-align: center;
+        font-family: freight-sans-pro, sans-serif;
         
     }
     .question_answers{

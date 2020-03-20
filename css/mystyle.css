@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ndh0umu.css");
 *,
 *:after,
 *:before {
@@ -8,7 +9,7 @@
 body {
   font-size: 25px;
   height: 100vh;
-  font-family: Arial;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 /*******************************INDEX*******************************/
@@ -75,6 +76,7 @@ body {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 /*******************************LANGUAGES*******************************/
@@ -186,6 +188,7 @@ body {
           flex: 1;
   -webkit-box-shadow: 4px 8px 6px #00000021;
           box-shadow: 4px 8px 6px #00000021;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 .menu__btn-content .btn2, .menu__btn-content .btn3 {
@@ -464,6 +467,7 @@ body {
   font-size: 13px;
   border: none;
   cursor: pointer;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 .calendar__container__content__table__grid .calendar__container__content__table__grid__element4, .calendar__container__content__table__grid .calendar__container__content__table__grid__element5, .calendar__container__content__table__grid .calendar__container__content__table__grid__element10, .calendar__container__content__table__grid .calendar__container__content__table__grid__element15, .calendar__container__content__table__grid .calendar__container__content__table__grid__element26, .calendar__container__content__table__grid .calendar__container__content__table__grid__element32 {
@@ -476,6 +480,7 @@ body {
   width: 90%;
   border: none;
   cursor: pointer;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 /******************************** Popup container*****************************************************/
@@ -730,6 +735,7 @@ input[type=submit] {
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
+  font-family: freight-sans-pro, sans-serif;
 }
 
 .question_answers {
