@@ -54,7 +54,11 @@
 							</select>
 							
 						
+<<<<<<< HEAD
 							<input type="submit" id="submit-btn" value="Submit" onclick="validation(); showThanks()">
+=======
+							<input type="submit" id="submit-btn" value="Submit" onclick="validation()">
+>>>>>>> master
 						  </form>
 						</div>
 						<div class="thankyou__info" id="thanks">
@@ -150,8 +154,17 @@
 				return false;
 			}
 			return( true );
+<<<<<<< HEAD
 		};
 		/*
+=======
+			var thanks = document.getElementById("thanks");
+				var popup = document.getElementById("myPopup");
+				popup.style="display: none";
+				thanks.style="display: block";
+		}
+		
+>>>>>>> master
 		var submit = document.getElementById("submit-btn");
 		submit.addEventListener("click", validation());*/
 		
@@ -159,10 +172,14 @@
 		function showThanks(){
 			if(validation() === true){
 				console.log("show/hide")
+<<<<<<< HEAD
 				var thanks = document.getElementById("thanks");
 				var popup = document.getElementById("myPopup");
 				popup.style="display: none";
 				thanks.style="display: fixed";
+=======
+				
+>>>>>>> master
 			};
 		};
 		</script>
