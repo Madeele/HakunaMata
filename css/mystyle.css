@@ -745,5 +745,6 @@ input[type=submit] {
   display: inline-grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  font-family: freight-sans-pro, sans-serif;
 }
 /*# sourceMappingURL=mystyle.css.map */
