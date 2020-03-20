@@ -54,7 +54,7 @@
 							</select>
 							
 						
-							<input type="submit" id="submit-btn" value="Submit" onclick="showThanks()">
+							<input type="submit" id="submit-btn" value="Submit" onclick="validation()">
 						  </form>
 						</div>
 						<div class="thankyou__info" id="thanks">
@@ -147,6 +147,10 @@
 				return false;
 			}
 			return( true );
+			var thanks = document.getElementById("thanks");
+				var popup = document.getElementById("myPopup");
+				popup.style="display: none";
+				thanks.style="display: block";
 		}
 		
 		var submit = document.getElementById("submit-btn");
@@ -155,10 +159,7 @@
 		if(validation() === true){
 			function showThanks() {
 				console.log("show/hide")
-				var thanks = document.getElementById("thanks");
-				var popup = document.getElementById("myPopup");
-				popup.style="display: none";
-				thanks.style="display: block";
+				
 			};
 		};
 
