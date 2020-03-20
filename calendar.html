@@ -30,24 +30,40 @@
 					<div class="calendar__container__content__days__element1">Wednesday</div>
 				</div>
 				<div class="popup" onclick="myFunction()">
-					<span class="popuptext" id="myPopup">
-						<form action="/#">
-							<label  for="fname">Name</label>
-							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name..">
+					<div class="popuptext" id="myPopup">
+						<form action="/#" name="contactForm">
+							<label  for="fname">First Name</label>
+							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" required>
+
+							<label  for="fname">Last Name</label>
+							<input class="popup_label" type="text" id="lname" name="lastname" placeholder="Your name.." minlength="3" maxlength="20" required>
 						
 							<label  for="lname">E-mail</label>
-							<input  type="text" id="lname" name="lastname" placeholder="Your E-mail addresss">
+							<input  type="email" id="email" name="email" placeholder="Your E-mail addresss">
 
 							<label  for="lname">Phone number</label>
-							<input class="popup_label" type="text" id="lname" name="lastname" placeholder="Your phone number">
+							<input class="popup_label" type="tel" id="phone" name="phone" placeholder="Your phone number" minlength="8" maxlength="8" required>
+
+							<input type="datetime-local" id="meeting-time" name="meeting-time" value="2020-03-23T09:00">
 						
+							<select>
+								<option>Dorte Hedevang</option>
+								<option>Jens Bach Nielsen</option>
+								<option>Kurt Rasmussen</option>
+								<option>Trine-Maria Frederiksen</option>
+							</select>
+							
 						
-							<label class="popup_label" for="subject">Subject</label>
-							<textarea class="popup_label" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-						
-							<input type="submit" value="Submit">
+							<input type="submit" id="submit-btn" value="Submit" onclick="showThanks()">
 						  </form>
-					</span>
+						</div>
+						<div class="thankyou__info" id="thanks">
+							<p>The appointment has been set up.
+							You will get a confirmation on your email soon.</p>
+							
+							<p>You will be inform about any changes via and email.</p>
+							<button onclick="location.href='menu.html'">Back</button>
+						</div>
 				  </div>
 				<div class="calendar__container__content__table__grid">
 					<button class="calendar__container__content__table__grid__element1" onclick="myFunction()" id="btn_hours">09:00 - 09:30</button>
@@ -98,6 +114,55 @@
 		  var popup = document.getElementById("myPopup");
 		  popup.classList.add("show");
 		}
+
+		function showThanks() {
+		  console.log("show/hide")
+		  var thanks = document.getElementById("thanks");
+		  var popup = document.getElementById("myPopup");
+		  popup.style="display: none";
+		  thanks.style="display: block";
+		}
+		
+		function validation(){
+			if( document.contactForm.firstname.value == "" ) {
+				alert( "Please provide your name!" );
+				document.contactForm.firstname.focus();
+				return false;
+			}
+			if( document.contactForm.lastname.value == "" ) {
+				alert( "Please provide your name!" );
+				document.contactForm.lastname.focus();
+				return false;
+			}
+			if( document.contactForm.email.value == "" ) {
+				alert( "Please provide your Email!" );
+				document.contactForm.email.focus();
+				return false;
+			}
+			if( document.contactForm.phone.value == "" || isNaN( document.contactForm.phone.value ) ||
+				document.contactForm.phone.value.length != 8 ) {
+				
+				alert( "Please provide a phone number." );
+				document.contactForm.phone.focus();
+				return false;
+			}
+			return( true );
+		}
+		
+		var submit = document.getElementById("submit-btn");
+		submit.addEventListener("click", validation());
+
+		if(validation() === true){
+			function showThanks() {
+				console.log("show/hide")
+				var thanks = document.getElementById("thanks");
+				var popup = document.getElementById("myPopup");
+				popup.style="display: none";
+				thanks.style="display: block";
+			};
+		};
+
+		
 		</script>
 </body>
 
