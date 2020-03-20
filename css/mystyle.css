@@ -747,4 +747,58 @@ input[type=submit] {
       grid-template-columns: auto auto;
   font-family: freight-sans-pro, sans-serif;
 }
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  border-radius: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10%;
+  height: 30px;
+  background: #6581CD;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #6581CD;
+  cursor: pointer;
+}
+
+.value_slide {
+  display: inline-block;
+  font-family: freight-sans-pro, sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 45%;
+}
+
+.value_slide2 {
+  display: inline-block;
+  font-family: freight-sans-pro, sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  float: right;
+}
+
+p {
+  padding: 20px;
+}
 /*# sourceMappingURL=mystyle.css.map */
