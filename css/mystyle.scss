@@ -17,9 +17,10 @@ $white: #fff;
 body{
     font-size: 25px;
     height: 100vh;
-    font-family: Arial;
+    font-family: freight-sans-pro, sans-serif;
 
 }
+@import url("https://use.typekit.net/ndh0umu.css");
 /*******************************INDEX*******************************/
 %mainContainer {
     width: 100%;
@@ -72,6 +73,7 @@ body{
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            font-family: freight-sans-pro, sans-serif;
 
         }
     }
@@ -85,6 +87,7 @@ body{
 
     &__btn-content{
         display: flex;
+        
 
         &__btn{
             width: 50%;
@@ -96,6 +99,7 @@ body{
             border: none;
             border-radius: 20px;
             cursor: pointer;
+            
         }
     }
 
@@ -160,6 +164,7 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         
+        
         &__btn{
             padding: 3% 0;
             margin:40px 0 0 0;
@@ -172,6 +177,7 @@ body{
             cursor: pointer;
             flex:1;
             box-shadow: 4px 8px 6px #00000021;
+            font-family: freight-sans-pro, sans-serif;
 
         }
 
@@ -447,6 +453,7 @@ body{
                     font-size: 13px;
                     border: none;
                     cursor: pointer;
+                    font-family: freight-sans-pro, sans-serif;
                 }
 
                 %red_elements{
@@ -459,6 +466,7 @@ body{
                     width: 90%;
                     border: none;
                     cursor: pointer;
+                    font-family: freight-sans-pro, sans-serif;
                 }
 
                 &__element1{
@@ -740,3 +748,148 @@ input[type=submit] {
     }
     }
 
+<<<<<<< HEAD
+=======
+    /*******************************TEST*******************************/
+    .test_container{
+        @extend %mainContainer;
+        background-color: $white;
+    }
+
+    .test_container2a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container2b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container2c_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container3a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container3b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container4b_b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container5a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container5a_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result2{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6a_result3{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result2{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result3{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    .test_container6b_result4{
+        @extend %mainContainer;
+        background-color: $white;
+        display:none;
+    }
+    #test_result_ok{
+    width: 15%;
+    margin-top: 40px;
+    padding: 20px 10px 20px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #6581CD;
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    }
+
+    .test_container__btn{
+        width: 95%;
+        margin-top: 40px;
+        padding: 20px 10px 20px 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #6581CD;
+        background-color: #FAFAFA;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        text-align: center;
+        font-family: freight-sans-pro, sans-serif;
+        
+    }
+    .question_answers{
+        width: 90%;
+        text-align: center;
+        display: inline-grid;
+        grid-template-columns: auto auto ;
+        font-family: freight-sans-pro, sans-serif;
+    }
+
+>>>>>>> master
