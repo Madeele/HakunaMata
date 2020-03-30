@@ -196,17 +196,17 @@
 				return false;
 			}
 			if( document.contactForm.lastname.value == "" ) {
-				document.contactForm.firstname.style.border = "1px solid #E37B7B";
+				document.contactForm.lastname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			if( document.contactForm.email.value == "" ) {
-				document.contactForm.firstname.style.border = "1px solid #E37B7B";
+				document.contactForm.email.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			//Checking if phone is empty and if it's a number and has 8 numbers
 			if( document.contactForm.phone.value == "" || isNaN( document.contactForm.phone.value ) ||
 				document.contactForm.phone.value.length != 8 ) {
-				document.contactForm.firstname.style.border = "1px solid #E37B7B";
+				document.contactForm.phone.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			return( true );
