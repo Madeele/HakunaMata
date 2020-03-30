@@ -7,8 +7,8 @@
 	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/mystyle.css">
-	
+	<link rel="stylesheet" href="css/main.css">
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -17,26 +17,29 @@
 
 <body>
 	<div class="faq">
-		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
+		<div class="xbutton2" tabindex="1">
+		<img src="images/prev.svg" class="faq__prev-arrow noSelect" alt="prev arrow" onclick="back()"></div>
 		<div class="faq__questions">
 			<img src="images/avatarblue.svg" class="container__img" alt="avatar">
 			<header class="container__header">
-				<p>Here you can find answers for 
+				<p>Here you can find answers for
 					mostly asked questions.</p>
 			</header>
 		</div>
 		<div class="faq__answers">
-			<div class="faq__answers_el1">What programmes do you offer?</div>
-			<div class="faq__answers_el2">What is the difference between an AP programme, a Bachelor
+			<div class="faq__answers_el1 ripple noSelect">What programmes do you offer?</div>
+			<div class="faq__answers_el2 ripple noSelect">What is the difference between an AP programme, a Bachelor
 				and a Bachelor’s top-up?</div>
-			<div class="faq__answers_el3">How can I apply for an AP or a Bachelor’s programme at BAAA?</div>
-			<div class="faq__answers_el4">How can I apply for a Bachelor’s top-up programme at BAAA?</div>
-			<div class="faq__answers_el5">What is an SU?</div>
-			<div class="faq__answers_el6">Is an internship part of my studies?</div>
-			<div class="faq__answers_el7">How can I apply for Housing?</div>
+			<div class="faq__answers_el3 ripple noSelect">How can I apply for an AP or a Bachelor’s programme at BAAA?</div>
+			<div class="faq__answers_el4 ripple noSelect">How can I apply for a Bachelor’s top-up programme at BAAA?</div>
+			<div class="faq__answers_el5 ripple noSelect">What is an SU?</div>
+			<div class="faq__answers_el6 ripple noSelect">Is an internship part of my studies?</div>
+			<div class="faq__answers_el7 ripple noSelect">How can I apply for Housing?</div>
 
 			<div class="faq__answers_text faq__answers_text1">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>We offer the following AP programmes:</h2>
@@ -63,7 +66,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text2">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Degree programmes at Business Academy Aarhus:</h2>
@@ -104,10 +109,12 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text3">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
-					
+
 					<p>You must upload attachments as documentation for the information stated in your
 						application. It is your responsibility to upload all relevant documentation.
 						You must upload all documentation with your application before the application deadline.
@@ -146,7 +153,7 @@
 					<p>If you have applied via www.baaa.dk (study start in January), you must upload all
 						attachments via the link provided in your receipt email. You can get the receipt e-mail resent
 						here</p>
-					
+
 					<h2>Do you have any questions?</h2>
 
 					<p>We will contact you if we need any additional information to process your application.</p>
@@ -156,7 +163,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text4">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<p>You must upload attachments as documentation for the information stated in your
@@ -210,7 +219,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text5">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<p>For all students on full-time programmes:</p>
@@ -219,13 +230,15 @@
 
 					<p>Danish citizens can apply for financial support (SU) according to the rules for obtaining
 						grants and loans from the Danish State Education Grant and Loan Scheme.</p>
-					
+
 					<p>Non-Danish citizens have to meet certain demands in order to be entitled to receive SU.
 					</p>
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text6">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Prepare for the future with your internship</h2>
@@ -245,7 +258,9 @@
 				</div>
 			</div>
 			<div class="faq__answers_text faq__answers_text7">
-				<span class="faq__answers_close">&times;</span>
+				<div class="xbutton" tabindex="1">
+					<span class="faq__answers_close noSelect">&times;</span>
+				</div>
 
 				<div class="faq__answers_text-content">
 					<h2>Housing for full degree students</h2>
@@ -290,55 +305,79 @@
 					<p>If you have any questions you can also write to us at <a href="mailto:apply@baaa.dk">apply@baaa.dk</a>.</p>
 				</div>
 			</div>
-				
+
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript" src=""></script>
 	<script>
-		$(document).ready(function(){			
-			
+		$(document).ready(function(){
+
 			//Open answer1
 			$(".faq__answers_el1").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text1").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer2
 			$(".faq__answers_el2").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text2").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer3
 			$(".faq__answers_el3").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text3").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer4
 			$(".faq__answers_el4").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text4").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer5
 			$(".faq__answers_el5").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text5").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer6
 			$(".faq__answers_el6").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text6").animate({right: "0%"}, 200);
+			},400);
         	});
 
 			//Open answer7
 			$(".faq__answers_el7").click(function(){
+				setTimeout(function() {
             	$(".faq__answers_text7").animate({right: "0%"}, 200);
+			},400);
         	});
 			//Closing any answers
 			$(".faq__answers_close").click(function(){
+				setTimeout(function() {
 				$(".faq__answers_text").animate({right: "-100%"}, 200);
+			},300);
 			});
 
 		});
+
+		function back(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 200);
+		}
+
+		
 	</script>
 </body>
 

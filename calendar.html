@@ -6,10 +6,12 @@
 	<meta name="author" content="Wojciech, Magdalena, Chiara, Aleksandra">
 	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
 
-	<link rel="stylesheet" href="css/mystyle.css">
-	
+	<link rel="stylesheet" href="css/main.css">
 
+
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<title>Study Counseling | Business Academy Aarhus</title>
@@ -17,144 +19,199 @@
 
 <body>
 	<div class="calendar__container">
-		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="location.href='menu.html'">
+		<div class="xbutton2" tabindex="1"></div>
+		<img src="images/prev.svg" class="faq__prev-arrow"alt="prev arrow" onclick="back()">
 		<div class="calendar__container__content">
-				<header class="calendar__container__content__header">
-					<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
-					<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
-				</header>
+			<header class="calendar__container__content__header">
+				<img src="images/avatarorange.svg" class="calendar__container__content__img" alt="avatar">
+				<p>CHOOSE THE DAY AND TIME FOR YOUR APPOINTMENT</p>
+			</header>
 			<div class="calendar__container__content__table">
-				<div class="calendar__container__content__days">
-					<div class="calendar__container__content__days__element1">Monday</div>
-					<div class="calendar__container__content__days__element1">Tuesday</div>
-					<div class="calendar__container__content__days__element1">Wednesday</div>
+				<div class="calendar__container__content__table__date">
+					<h3>30 March - 3 April 2020</h3>
 				</div>
-				<div class="popup" onclick="myFunction()">
+				<div class="popup">
 					<div class="popuptext" id="myPopup">
 						<form action="/#" name="contactForm">
+							<div class="popup_close_button ripple" tabindex="1">
+								<span class="calendar_popup_close">&times;</span>
+							</div>
+							<div id="map"></div>
 							<label  for="fname">First Name</label>
 							<input class="popup_label" type="text" id="fname" name="firstname" placeholder="Your name.." minlength="3" maxlength="20" required>
 
 							<label  for="fname">Last Name</label>
 							<input class="popup_label" type="text" id="lname" name="lastname" placeholder="Your name.." minlength="3" maxlength="20" required>
-						
+
 							<label  for="lname">E-mail</label>
-							<input  type="email" id="email" name="email" placeholder="Your E-mail addresss">
+							<input  type="email" id="email" name="email" placeholder="Your E-mail addresss" required>
 
 							<label  for="lname">Phone number</label>
 							<input class="popup_label" type="tel" id="phone" name="phone" placeholder="Your phone number" minlength="8" maxlength="8" required>
 
 							<input type="datetime-local" id="meeting-time" name="meeting-time" value="2020-03-23T09:00">
-						
+
 							<select>
 								<option>Dorte Hedevang</option>
 								<option>Jens Bach Nielsen</option>
 								<option>Kurt Rasmussen</option>
 								<option>Trine-Maria Frederiksen</option>
 							</select>
-							
-						
+
 							<input type="submit" id="submit-btn" value="Submit" onclick="validation(); showThanks()">
 						  </form>
 						</div>
 						<div class="thankyou__info" id="thanks">
 							<p>The appointment has been set up.
 							You will get a confirmation on your email soon.</p>
-							
+
 							<p>You will be inform about any changes via and email.</p>
-							<button onclick="location.href='menu.html'">Back</button>
+							<button onclick="location.href='menu.html'" class="thankyou__info__btn">Back</button>
 						</div>
 				  </div>
+				
 				<div class="calendar__container__content__table__grid">
-					<button class="calendar__container__content__table__grid__element1" onclick="myFunction()" id="btn_hours">09:00 - 09:30</button>
- 					<button class="calendar__container__content__table__grid__element2">09:30 - 10:00</button>
- 					<button class="calendar__container__content__table__grid__element3">10:00 - 10:30</button>
- 					<button class="calendar__container__content__table__grid__element4">10:30 - 11:00</button>
- 					<button class="calendar__container__content__table__grid__element5">11:00 - 11:30</button>
- 					<button class="calendar__container__content__table__grid__element6">11:30 - 12:00</button>
- 					<button class="calendar__container__content__table__grid__element7">12:00 - 12:30</button>
-					<button class="calendar__container__content__table__grid__element8">12:30 - 13:00</button>
-					<button class="calendar__container__content__table__grid__element9">13:00 - 13:30</button>
-					<button class="calendar__container__content__table__grid__element9">13:30 - 14:00</button>
-					<button class="calendar__container__content__table__grid__element10">14:00 - 14:30</button>
- 					<button class="calendar__container__content__table__grid__element11">14:30 - 15:00</button>
- 					<button class="calendar__container__content__table__grid__element12">09:00 - 09:30</button>
- 					<button class="calendar__container__content__table__grid__element13">09:30 - 10:00</button>
- 					<button class="calendar__container__content__table__grid__element14">10:00 - 10:30</button>
- 					<button class="calendar__container__content__table__grid__element15">10:30 - 11:00</button>
-					<button class="calendar__container__content__table__grid__element16">11:00 - 11:30</button>
-  					<button class="calendar__container__content__table__grid__element17">11:30 - 12:00</button>
-					<button class="calendar__container__content__table__grid__element18">12:00 - 12:30</button>
-					<button class="calendar__container__content__table__grid__element19">12:30 - 13:00</button>
- 					<button class="calendar__container__content__table__grid__element20">13:00 - 13:30</button>
- 					<button class="calendar__container__content__table__grid__element21">13:30 - 14:00</button>
- 					<button class="calendar__container__content__table__grid__element22">14:00 - 14:30</button>
-  					<button class="calendar__container__content__table__grid__element23">14:30 - 15:00</button>
-					<button class="calendar__container__content__table__grid__element24">09:00 - 09:30</button> 
-					<button class="calendar__container__content__table__grid__element25">09:30 - 10:00</button> 
-					<button class="calendar__container__content__table__grid__element26">10:00 - 10:30</button> 
-					<button class="calendar__container__content__table__grid__element27">10:30 - 11:00</button> 
-					<button class="calendar__container__content__table__grid__element28">11:00 - 11:30</button> 
-					<button class="calendar__container__content__table__grid__element29">11:30 - 12:00</button> 
-					<button class="calendar__container__content__table__grid__element30">12:00 - 12:30</button> 
-					<button class="calendar__container__content__table__grid__element31">12:30 - 13:00</button> 
-					<button class="calendar__container__content__table__grid__element32">13:00 - 13:30</button> 
-					<button class="calendar__container__content__table__grid__element33">13:30 - 14:00</button> 
-					<button class="calendar__container__content__table__grid__element33">14:00 - 14:30</button>
-					<button class="calendar__container__content__table__grid__element33">14:30 - 15:00</button>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Monday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Tuesday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Wednesday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Thursday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
+					<div class="calendar__container__content__table__grid__element">
+						<div class="calendar__container__content__table__grid__element__day">
+							<h4>Friday</h4>
+						</div>
+						<div class="calendar__container__content__table__grid__element__hour">
+							<button class="calendar__container__content__table__grid__element__hour__el">09:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">09:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">10:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">11:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">12:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">13:30</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:00</button>
+							<button class="calendar__container__content__table__grid__element__hour__el">14:30</button>
+						</div>
+					</div>
 				</div>
-			</div>		 
+			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript" src=""></script>
 	<script>
-		// When the user clicks on <div>, open the popup
-		function myFunction() {
-		  var popup = document.getElementById("myPopup");
-		  popup.classList.add("show");
-		}
-/*
-		function showThanks() {
-		  console.log("show/hide")
-		  var thanks = document.getElementById("thanks");
-		  var popup = document.getElementById("myPopup");
-		  popup.style="display: none";
-		  thanks.style="display: block";
-		}*/
-		
+		$(".calendar__container__content__table__grid__element__hour__el").each(function(){
+			$(".calendar__container__content__table__grid__element__hour__el").click(function(){
+				var btnValue = $(this).text();
+				
+				var popup = document.getElementById("myPopup");
+		  		popup.classList.add("show");
+				$("#meeting-time").val("2020-04-02T"+btnValue);
+
+				localStorage.setItem("status", "booked");
+				if(localStorage.getItem("status") == "booked"){
+					console.log("Local storage is here");
+					$(this).css("background-color", "#E37B7B");
+				};
+
+			});
+		});
+
 		//Validation user's data
 		function validation(){
 			//Checking if input is empty. If yes, then infromation will show text about providing correct data
 			if( document.contactForm.firstname.value == "" ) {
-				alert( "Please provide your name!" );
-				document.contactForm.firstname.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			if( document.contactForm.lastname.value == "" ) {
-				alert( "Please provide your name!" );
-				document.contactForm.lastname.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			if( document.contactForm.email.value == "" ) {
-				alert( "Please provide your Email!" );
-				document.contactForm.email.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			//Checking if phone is empty and if it's a number and has 8 numbers
 			if( document.contactForm.phone.value == "" || isNaN( document.contactForm.phone.value ) ||
 				document.contactForm.phone.value.length != 8 ) {
-				
-				alert( "Please provide a phone number." );
-				document.contactForm.phone.focus();
+				document.contactForm.firstname.style.border = "1px solid #E37B7B";
 				return false;
 			}
 			return( true );
 		};
-		/*
-		var submit = document.getElementById("submit-btn");
-		submit.addEventListener("click", validation());*/
-		
+
 		//Showing information that appointment has been booked
 		function showThanks(){
 			if(validation() === true){
@@ -162,9 +219,86 @@
 				var thanks = document.getElementById("thanks");
 				var popup = document.getElementById("myPopup");
 				popup.style="display: none";
-				thanks.style="display: fixed";
+				thanks.style="display: block";
 			};
 		};
-		</script>
+
+		document.getElementById("submit-btn").addEventListener("click", function(event){
+				event.preventDefault()
+		});
+
+
+		function back(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 200);
+		}
+
+
+		/********* MAPBOX**********/
+
+		mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZWVsZSIsImEiOiJjazdkMWF3NjIwNTBiM2lud2k3cjY0Njl5In0.d6TBUltXIwgnMsKbwESW7g';
+
+		var monument = [10.159,56.120];
+		let mon2 = [10.150,56.117];
+
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/madeele/ck88yjffu26oy1ikb7lcr33b0',
+			center: monument,
+			zoom: 16
+		});
+
+		var popup = new mapboxgl.Popup({
+			offset: 25
+			}).setText(
+				'Main Building of Business Academy Aarhus'
+		);
+
+		let pop2 = new mapboxgl.Popup({
+			offset: 25
+		}).setText(
+			'Golden Building of Business Academy Aarhus'
+		);
+
+		var el = document.createElement('div');
+		el.id = 'marker';
+
+		var el2 = document.createElement('div');
+		el2.id = 'mark2';
+
+		new mapboxgl.Marker(el)
+			.setLngLat(monument)
+			.setPopup(popup) // sets a popup on this marker
+			.addTo(map);
+
+		new mapboxgl.Marker(el2)
+			.setLngLat(mon2)
+			.setPopup(pop2) // sets a popup on this marker
+			.addTo(map);
+
+		function calendar_back(){
+			setTimeout(function(){
+				$(".calendar__container__content__table__grid").css({
+					"display":"none"
+					});
+					setTimeout(function() {
+						$(".calendar__container__content__table__grid2").css({
+							"display":"block",
+								
+						});
+					},);
+			}, 200);
+		}
+
+		$(".popup_close_button").click(function(){
+			setTimeout(function() {
+				$(".popuptext").css({
+					"display":"none"
+				});
+			},400);
+		});
+	</script>
+
 </body>
 </html>

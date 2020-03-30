@@ -1,0 +1,338 @@
+
+// File: _faq.scss
+
+
+
+.faq{
+
+  @extend %mainContainer;
+  display: flex;
+
+  &__prev-arrow{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  &__questions{
+
+    background-color: $turquoise;
+    width: 35%;
+    height: 100%;
+    -webkit-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 2px 14px -4px rgba(0,0,0,0.75);
+    z-index:99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container__img{
+      width: 180px;
+      height: 180px;
+      margin-bottom: 15px;
+    }
+
+    .container__header{
+      width: 75%;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px 2.5%;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 4px 8px 6px #00000021;
+    }
+  }
+
+  &__answers{
+    width: 65%;
+    height: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -1%;
+
+  &_el{
+    width: 50%;
+    padding: 20px;
+    background-color: $grey;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 8px 6px #00000021;
+  }
+
+  &_text::-webkit-scrollbar{
+    width: 10px;
+  }
+  &_text::-webkit-scrollbar-track{
+    background-color: $grey;
+  }
+  &_text::-webkit-scrollbar-thumb{
+    background-color: $orange;
+    width: 10px;
+    border-radius: 20px;
+  }
+
+  &_text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    right: -100%;
+    padding-left: -0%;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+
+    .faq__answers_close{
+      font-size: 50px;
+      margin: 0 30px 30px 30px;
+      float: right;
+      cursor: pointer;
+      color: $red;
+      position: absolute;
+      background-color: transparent;
+      outline: none;
+    }
+
+    .faq__answers_text-content{
+      clear: both;
+      max-width: 75%;
+      margin: 15px auto 0 auto;
+    }
+
+    h2{
+      font-size: 35px;
+      margin: 15px 0;
+      color: $blue;
+    }
+
+    ul{
+      margin: 20px 0 20px 25px;
+      color: $dark;
+      font-size: 20px;
+    }
+
+    h2{
+      font-size: 35px;
+      margin: 15px 0;
+      color: $blue;
+    }
+
+    ul{
+      margin: 20px 0 20px 25px;
+      color: $dark;
+      font-size: 20px;
+    }
+
+    p{
+      color: $dark;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    a{
+      color: $red;
+    }
+
+  }
+        
+  %elses {
+    width: 50%;
+    padding: 20px;
+    background-color: $grey;
+    margin-top: 25px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 8px 6px #00000021;
+    font-size: 15px;
+  }
+
+  &_el1 {
+      @extend %elses;
+  }
+  &_el2 {
+      @extend %elses;
+  }
+  &_el3 {
+      @extend %elses;
+  }
+  &_el4 {
+      @extend %elses;
+  }
+  &_el5 {
+      @extend %elses;
+  }
+  &_el6 {
+      @extend %elses;
+  }
+  &_el7 {
+      @extend %elses;
+  }
+  }
+}
+
+.xbutton {
+  position: relative;
+  cursor: pointer;
+  margin: 40px 10px 0 30px;
+  float: right;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 52px;
+  transition: all 0.4s ease-in;
+
+  span[class^='ion'] {
+    position: relative;
+    
+  }
+
+  //start click effect
+  &:before {
+    content: '';
+    background-color: $grey;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+  }
+  &:focus {
+    outline: 0;
+    color: #fff;
+
+    &:before {
+      animation: effect_dylan 0.8s ease-out;
+    }
+  }
+}
+
+@keyframes effect_dylan {
+
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+.xbutton2 {
+  position: absolute;
+  cursor: pointer;
+  float: right;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 52px;
+  transition: all 0.4s ease-in;
+  z-index: 100;
+  span[class^='ion'] {
+    position: relative;
+    
+  }
+
+  //start click effect
+  &:before {
+    content: '';
+    background-color: $grey;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+    z-index: 100;
+  }
+  &:focus {
+    outline: 0;
+    color: #fff;
+    &:before {
+      animation: effect_dylan 0.8s ease-out;
+    }
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 1024px){
+
+  .faq__answers {
+    margin-top: -2%;
+
+    .faq__answers_el1{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el2{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el3{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el4{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el5{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el6{
+      width: 65%;
+      font-size: 18px;
+    }
+    .faq__answers_el7{
+      width: 65%;
+      font-size: 18px;
+    }
+  }
+  
+  .faq__questions {
+    .container__header{
+      width: 65%;
+      margin-top: 30px;
+      font-size: 20px;
+      padding: 15px 2.5%;
+    }
+  }
+}

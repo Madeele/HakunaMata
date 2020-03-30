@@ -1,0 +1,229 @@
+// File: main.scss
+
+
+
+$turquoise : #94D5DE;
+$red: #E37B7B;
+$green: #BDD7A9;
+$orange: #FFB275;
+$blue: #6581CD;
+$dark: #262626;
+$dark-grey: #DDDDDD;
+$white: #fff;
+$grey: #FAFAFA;
+
+$font: freight-sans-pro, sans-serif;
+
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 25px;
+    height: 100vh;
+    font-family: $font;
+    
+}
+
+@import "calendar";
+@import "faq";
+@import "index";
+@import "test";
+@import "menu";
+
+
+@import url("https://use.typekit.net/ndh0umu.css");
+
+
+
+.dot__el1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    transform: translate(-48%, -50%);
+    background-color: rgb(114, 21, 21);
+    z-index: 111;
+    border-radius: 30px;
+    animation: .8s loadAnimation1;
+    animation-iteration-count: infinite;
+}
+
+.dot__el2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    transform: translate(-51%, -50%);
+    background-color: rgb(105, 63, 63);
+    z-index: 112;
+    border-radius: 30px;
+    animation: .8s loadAnimation2;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+}
+
+@keyframes loadAnimation1{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes loadAnimation2{
+    from{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+%mainContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+%testContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 150%;
+}
+
+
+
+/*****************Circle positioning*****************/
+.container__item1{
+    top: -20%;
+    right: -25%;
+    width: 40%;
+}
+.container__item2{
+    top: -25%;
+    right: -5%;
+    width: 30%;
+}
+
+.container__item3{
+    bottom: -20%;
+    left: 5%;
+    width: 15%;
+    z-index:98;
+}
+
+.container__item4{
+    bottom: -25%;
+    left: -10%;
+    width: 25%;
+}
+
+
+/*******************************ADMIN PANEL*******************************/
+.admin__container{
+    @extend %mainContainer;
+    background-color: $turquoise;
+
+    &__item {
+        position: absolute;
+    }
+
+    .container__content{
+        &__img{
+            width: 180px;
+            height: 180px;
+            margin-bottom: 30px;
+        }
+        .container__btn{
+            width: 20%;
+            height: 10%;
+            padding: 20px;
+            font-size: 35px;
+            font-weight: 600;
+            color: $blue;
+            background-color: $white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .container__roundbox{
+            border-radius: 25px;
+            border: none;
+            box-shadow: 4px 8px 6px #00000021;
+            background-color: $white;
+            color: $blue;
+            padding: 20px;
+            width: 35%;
+            height: 2%;
+            margin-top: 25px;
+            font-size: 30px;
+            font-weight: 600;
+            padding: 30px;
+        }
+    }
+    }
+
+    
+
+
+     
+/*************************************** Ripple effect on buttons***************************************/
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: $grey radial-gradient(circle, transparent 1%, $grey 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: $dark-grey;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/*****Prevent the blue highlight in Chrome*****/
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+ 
+@media (max-width: 1024px){
+ 
+    .container__item3{
+        bottom: -25%;
+        width: 25%;
+    }
+    
+    .container__item4{
+        bottom: -28%;
+        width: 35%;
+    }
+
+    
+}

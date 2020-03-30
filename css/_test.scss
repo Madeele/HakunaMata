@@ -1,0 +1,643 @@
+
+// File: _test.scss
+
+
+.test_container{
+    @extend %mainContainer;
+    background-color: $white;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.box{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box2{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box3{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box4{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box5{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box6{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box7{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box8{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box9{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box10{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box11{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box12{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box13{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box14{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box15{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box16{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box17{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box18{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box19{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box20{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+.box21{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+        width: 95%;
+    }
+}
+
+.test_container2a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container2a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container2b{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container2c_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container3a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container3b{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container4b{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container4b_b{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container4b_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container4b_b_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container5a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container5a_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6a{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6a_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6a_result2{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6a_result3{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6b{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6b_result{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6b_result2{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6b_result3{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+.test_container6b_result4{
+    @extend %mainContainer;
+    background-color: $white;
+    display:none;
+
+    .container__header{
+        box-shadow: 4px 8px 6px #00000021;
+    }
+}
+
+
+
+#test_result_ok{
+    width: 15%;
+    margin-top: 40px;
+    padding: 20px 10px 20px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #6581CD;
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.test_container__btn{
+    width: 46%;
+    margin: 40px 10px 0 10px;
+    padding: 20px 10px 20px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #6581CD;
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: $font;
+    box-shadow: 4px 8px 6px #00000021;
+    outline: none;
+
+}
+.question_answers{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: $font;
+}
+
+.slidecontainer {
+    width: 90%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 20px;
+    margin: 0;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 30px;
+    background: $blue;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: $blue;
+    cursor: pointer;
+}
+
+.value_slide{
+    display: inline-block;
+    font-family: $font;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 45%;
+
+}
+.value_slide2 {
+    font-family: $font;
+    margin-top: 20px;
+    font-size: 20px;
+    float: right;
+}
+
+p{
+    padding: 20px;
+}
+
+.ok_btn{
+    width: 95%;
+    box-shadow: 4px 8px 6px #00000021;
+}
+
+.final_result {
+    color: $orange;
+}
+
+@media (max-width: 1024px){
+    .test_container{
+        .container__content .container__img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .test_container2a{
+        .container__content .container__img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .test_container2b{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container2c_result{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container3a{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container3b{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container4b{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container4b_b{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container4b_result{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container5a{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container5a_result{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6a{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6a_result{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6a_result2{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6a_result3{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6b{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6b_result{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6b_result2{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6b_result3{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    .test_container6b_result4{
+        .container__content .container__img {
+                width: 100px;
+                height: 100px;
+        }
+    }
+    
+}
+

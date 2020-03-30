@@ -7,8 +7,8 @@
 	<meta name="description" content="It doesn't matter if you are a new or current student, we are the Study Counseling and we have an answer for your question!">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/mystyle.css">
-	
+	<link rel="stylesheet" href="css/main.css">
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -27,7 +27,8 @@
 				<p>Welcome to the Study Counselling.<br>
 					We are here to help you.</p>
 			</header>
-			<button class="container__btn" id="btn-start">START</button>
+			<button class="ripple container__btn noSelect" id="btn-start">START
+			</button>
 		</div>
 	</div>
 	<div class="container2">
@@ -41,31 +42,34 @@
 				<p>Choose your language</p>
 			</header>
 			<div class="container2__btn-content">
-				<button class="container2__btn-content__btn" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
-				<button class="container2__btn-content__btn" id="british-btn" onclick="location.href='menu.html'"><img src="images/uk.svg" alt="british flag"></button>
+				<button class="container2__btn-content__btn ripple noSelect" id="danish-btn"><img src="images/dk.svg" alt="danish flag"></button>
+				<button class="container2__btn-content__btn ripple noSelect" id="british-btn" onclick="menu()"><img src="images/uk.svg" alt="british flag"></button>
 			</div>
 		</div>
 	</div>
-	<!--<div class="dots">
-		<div class="dot__el1"></div>
-		<div class="dot__el2"></div>
-	</div>-->
+	
 	<script>
-		/*$(window).on("load", function(){
-			$(".dots").fadeOut("slow");
-		});*/
-		
+
 		$(document).ready(function(){
 			$("#btn-start").click(function(){
 				console.log("add style");
-				$(".container").css({
-					"display":"none"
-				});
-				$(".container2").css({
-					"display":"block"
-				});
+				setTimeout(function() {
+						$(".container").css({
+							"display":"none"
+						});
+						$(".container2").css({
+							"display":"block"
+						});
+				},500);
 			});
 		});
+
+		function menu(){
+			setTimeout(function(){
+				location.href="menu.html";
+			}, 500);
+		}
+
 	</script>
 </body>
 
